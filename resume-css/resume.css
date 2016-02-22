@@ -1,0 +1,167 @@
+body{
+	background-color: #fff; 
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.jumbotron{
+  background-image: url("../img/sunflower.jpg");
+  background-size: 1200px 400px;
+  margin-bottom:50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  /* background-color: #FBE3E3; */
+}
+
+h1 {
+  margin-bottom:30px;
+}
+
+
+p {
+  /*margin-top:10px;*/
+  font-size:20px;
+}
+
+
+li{
+  font-size:20px;
+}
+
+i{
+  font-size:80px;
+}
+.resize{
+  width: 80px;
+  height:auto;
+}
+
+.about-me{
+  padding-top:20px;
+  padding-bottom:50px;
+}
+
+.my-resume{
+  padding-top:50px;
+  padding-bottom:30px;
+}
+
+.skills{
+  padding-bottom: 30px;
+}
+
+.project-img{
+  width: 400px;
+  height: auto;
+  left: 0px;
+  right:0px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.hover1 a img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover1 a:hover img {
+  opacity: 0.5;
+}
+
+#contact-me{
+  display: none;
+  text-align: middle;
+  font-size: 20px;
+}
+
+.hover1:hover #contact-me{
+  display: block;
+}
+
+.glyphicon{
+  font-size:30px;
+  padding-right: 20px;
+}
+
+.small{
+  width:50px;
+  height: auto;
+}
+
+.modal{
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+/*
+
+.img {
+  max-width: 20pt;
+  width: 100%;
+}
+
+/* IMAGE 
+header {
+  background-color: #999;
+  background-image: url(eunice.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.image {
+	max-width: 80em;
+	width:100%;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+  header {
+    height: 700px;
+  }
+  
+}
+
+/* ------------------- Grid ------------------- 
+
+.container {
+  max-width: 50em;
+  width:92%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* Experience 
+.experience [class*="row"] {
+  border-bottom: dotted 1px #ccc;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/
+
+
+ 
