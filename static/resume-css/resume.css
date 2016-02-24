@@ -85,6 +85,12 @@ i{
   height: 280px;
 }
 
+.projects {
+  background-image: url("../img/pink.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #contact-me{
   display: none;
   text-align: middle;
@@ -143,6 +149,11 @@ i{
 
 .a, .b {
   display: none;
+}
+
+.check-it-out {
+  margin:auto;
+  width: 50%;
 }
 
 
