@@ -61,8 +61,8 @@
 		
 		<!-- Images -->
 			<div class="col-md-4 hover1">
-				<a href="#" class="thumbnail" data-toggle="modal" data-target="#projectModal"><img src="img/swing.jpg"></a>
-				<span class="center" id="contact-me">Projects</span>
+				<a href="#" class="thumbnail" data-toggle="modal" data-target="#foodModal"><img src="img/swing.jpg"></a>
+				<span class="center" id="contact-me">Food Blog</span>
 			</div>
 			<div class="col-md-4 hover1" data-toggle="modal" data-target="#contactMeModal">
 				<a href="#" class="thumbnail"><img src="img/me.jpg"></a>
@@ -115,21 +115,17 @@
 		</div>
 
 		<!-- Projects Modal -->
-		<div id="projectModal" class="modal fade" role="dialog">
+		<div id="foodModal" class="modal fade" role="dialog">
 		  <div class="modal-dialog">
 
 		    <!-- Modal content-->
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h2 class="modal-title title">Projects</h2>
+		        <h2 class="modal-title title">Food Blog</h2>
 		      </div>
 		      <div class="modal-body">
-		        <p>Kinder Web App </p>
-		        <a href="https://www.kinderapp.heroku.com" target="_blank"><img class="project-img img-rounded img-responsive" src="img/kinder.jpg"></a>
-		        <p>Drawbot</p>
-		        <img class="project-img img-rounded img-responsive" src="img/drawbot.jpg">
-
+		        <p>Sorry! Coming soon! </p>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -182,9 +178,30 @@
 				<p>I am a 3rd year student studying computer science at UC San Diego.</p> 
 				<p>I am interested in becoming an UX/UI designer.</p>
 				<p>Currently, I am taking a Human-Computer-Interaction design course to gain more experience.</p>
+				<p>I became interested in designs and user experience when I was working on an update at Bentley Systems in 2015. One of their customers complained how their editing tool was not user-friendly and missing essential features. My supervisors assigned this task to me and told me to fix it. Ever since, I have been intrigued by design practices and user flows.</p>
 			</section>
 			<hr>
 		</div>
+
+
+		<!-- PROJECTS -->
+		<div class="container">
+			<section class="projects">
+				<h1 class="title center">Projects</h1>
+				<div class="row hover2">
+					<div class="col-sm-6">
+						<a href="http://kinderapp.heroku.com" target="_blank" class="thumbnail"><img src="img/kinder.jpg"></a>
+					</div>
+					<div class="col-sm-6">
+						<a href="#" class="thumbnail"><img src="img/drawbot.jpg"></a>
+					</div>
+				</div>
+			</section>
+			<hr>
+		</div>
+
+
+
 
 
 		<div class="container skills">
@@ -245,7 +262,8 @@
 
 			<hr>
 		</div>
-		
+
+				
 	
 	<!-- New container-->
 		<div class="container">
@@ -311,12 +329,14 @@
 		<hr>
 		
 		<section>
-			<div class="row">
-			<div class="title center">
-				<h1>Contact Me</h1>
-			</div>
-				<p>Thanks for visit my portfolio!</p>
-				
+			<div class="row center">
+				<div class="title">
+					<h1>Thank you for visiting my portfolio!</h1>
+				</div>
+				<p>If you are looking for a designer and you like my work, please feel free to contact me.</p>	
+				<button type="button" id="message-me-btn" class="btn" data-toggle="modal" data-target="#contactMeModal">
+					<span class="glyphicon glyphicon-envelope"></span>Message Me
+				</button>
 			</div>
 		</section>
 		

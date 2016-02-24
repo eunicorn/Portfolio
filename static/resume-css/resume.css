@@ -42,8 +42,13 @@ i{
 }
 
 .about-me{
-  padding-top:20px;
+  padding-top:50px;
   padding-bottom:50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background: url("../img/blue.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .my-resume{
@@ -55,15 +60,6 @@ i{
   padding-bottom: 30px;
 }
 
-.project-img{
-  width: 400px;
-  height: auto;
-  left: 0px;
-  right:0px;
-  margin-left: auto;
-  margin-right:auto;
-}
-
 .hover1 a img {
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
@@ -73,10 +69,31 @@ i{
   opacity: 0.5;
 }
 
+.hover2 a img{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.hover2 a:hover img{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.project-img{
+  height: 280px;
+}
+
 #contact-me{
   display: none;
   text-align: middle;
   font-size: 20px;
+}
+
+#message-me-btn{
+  background-color:#FBBBB9;
+  color: white;
 }
 
 .hover1:hover #contact-me{
@@ -110,6 +127,11 @@ i{
   display: inline-block;
   text-align: left;
   vertical-align: middle;
+}
+
+.experience {
+  margin-left: 100px;
+  margin-right: max-width;
 }
 
 
