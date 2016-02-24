@@ -129,10 +129,22 @@ i{
   vertical-align: middle;
 }
 
+#prog-lang, #tools {
+  display: none;
+  margin-left: 100px;
+  margin-right: max-width;
+  display: none;
+}
+
 .experience {
   margin-left: 100px;
   margin-right: max-width;
 }
+
+.a, .b {
+  display: none;
+}
+
 
 
 /*

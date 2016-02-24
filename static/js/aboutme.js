@@ -1,11 +1,14 @@
-/*
-$("#pdf-btn").click(showPDF);
 
-function showPDF(e) {
+$("#aa").click(show);
+$("#bb").click(show);
+
+function show(e) {
     // prevent the page from reloading
     e.preventDefault();
-    $("#pdf").toggle();
-
+    var x = this.id;
+    console.log(x);
+    x = x.charAt(0)
+    var newX = "."+ x;
+    $(newX).toggle();
 };
 
-*/
