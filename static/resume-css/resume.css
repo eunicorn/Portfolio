@@ -54,6 +54,9 @@ i{
 .my-resume{
   padding-top:50px;
   padding-bottom:30px;
+  background: url("../img/purple.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .skills{
@@ -99,7 +102,7 @@ i{
 
 #message-me-btn{
   background-color:#FBBBB9;
-  color: white;
+  color: black;
 }
 
 .hover1:hover #contact-me{
@@ -156,6 +159,9 @@ i{
   width: 50%;
 }
 
+.btn1 {
+  float:right;
+}
 
 
 /*
