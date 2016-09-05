@@ -3,19 +3,18 @@ body{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+/*
+
 .jumbotron{
   background-image: url("../img/sunflower.jpg");
   background-size: 1200px 400px;
   margin-bottom:50px;
 }
 
+*/
+
 .center {
   text-align: center;
-}
-
-.title {
-  font-family: 'Pacifico', cursive;
-  /* background-color: #FBE3E3; */
 }
 
 h1 {
@@ -28,10 +27,135 @@ p {
   font-size:20px;
 }
 
+/* Nav Bar */
+.nav {
+  padding:20px 0px 20px 0px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+.nav-ul {
+  list-style-type: none;
+}
+
+.nav-li {
+  display: inline;
+  padding: 0px 30px 0px 0px;
+  font-size: 20px;
+}
+
+.nav-button {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;
+}
+
 
 li{
   font-size:20px;
 }
+
+/* Jumbotron */
+.jumbotron {
+  text-align: center;
+  height: 700px;
+  padding: 30px 15px;
+  background-image: url("../img/sunflower.jpg");
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  /* background-color: #FBE3E3; */
+  padding-top: 100px;
+}
+
+
+/* Zoom Images */
+.image-zoom-container {
+	list-style: none;
+	font-size: 0px;
+}
+.zoom-container {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 33.33%;
+	font-size: 16px;
+	font-size: 1rem;
+	border: 1px solid #fff;
+	vertical-align: top;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.zoom-container img {
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+}
+.zoom-container .zoom-caption {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	/*background: rgba(0, 0, 0, .5);*/
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+}
+.zoom-container .zoom-caption h3 {
+	display: block;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	font-weight: 900;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 23% 0 0;
+	padding: 10px 0;
+	border-top: 5px solid rgba(255, 255, 255, .15);
+	border-bottom: 5px solid rgba(255, 255, 255, .15);
+}
+.zoom-container:hover img {
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+        -moz-transform:scale(1.25); /* Firefox */
+        -ms-transform:scale(1.25); /* IE 9 */
+        -o-transform:scale(1.25); /* Opera */
+         transform:scale(1.25);
+}
+.zoom-container:hover .zoom-caption {
+	background: none;
+}
+ 
+@media (max-width: 767px) {
+	.zoom-container {
+		width: 50%;
+	}
+}
+ 
+@media (max-width: 480px) {
+	.zoom-container {
+		width: 100%;
+	}
+}
+
+
+
+
+/*
 
 i{
   font-size:80px;
@@ -212,7 +336,7 @@ header {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/
+*/
 
 
  
