@@ -12,3 +12,14 @@ function show(e) {
     $(newX).toggle();
 };
 
+/*
+$("#nav-me").click(active);
+$("#nav-projects").click(active);
+$("#nav-contactme").click(active);
+
+function active(e) {
+    e.preventDefault();
+    $(this.id).style.color = "blue";
+    return false;
+}
+*/
