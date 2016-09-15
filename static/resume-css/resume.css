@@ -7,13 +7,16 @@ html,body {
 }
 
 body{
-	background-color:#F9EDE1;
+	/* background-color:#F9EDE1; */
+  background-image: url("../img/background.jpg");
+  background-size: cover ;
 	font-family: 'Open Sans Condensed', sans-serif;
   padding-top: 100px;
 }
 
 .welcome {
   background-color: white;
+  margin-bottom: 20px;
 }
 
 .center {
@@ -30,26 +33,36 @@ p {
   font-size:20px;
 }
 
-/* Nav Bar */
+/* Nav Bar #F9EDE1*/
 
 #name {
   font-size: 30px;
   font-weight: 100;
+  color: black;
 }
 
 .navbar {
-  background-color: #F9EDE1;
+  background-color: white;
   border: 0;
-  padding: 20px 20px 30px 30px;
+  padding: 10px 50px 10px 50px;
   font-size: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
 }
 
 .navbar-nav {
   text-align:center;
 }
 
-a:hover {
-  color: blue;
+a.nav-active span {
+  border-bottom: 2px solid black;
+}
+
+a.nav-hover:hover span {
+  color: darkred;
+  border-bottom: 2px solid darkred;
 }
 
 /* Responsive */
@@ -70,14 +83,22 @@ a:hover {
 }
 
 /* buttons */
+
 .btn {
   background-color: white;
-  border: 1px solid black;
+  border 0;
   color: black;
   width: 250px;
   font-weight:900;
 }
 
+a.to-projects {
+  color: black;
+}
+a.to-projects:hover {
+  color: darkred;
+  border: 0;
+}
 
 .project {
   padding-top: 100px;
@@ -115,12 +136,14 @@ li{
 }
 
 .welcome {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding: 50px 50px 50px 50px;
+  padding: 20px 50px 20px 50px;
   width: 100%;
   text-align: center;
   border: 1px solid black;
+}
+.my-resume {
+  border: 1px solid black;
+  background-color: white;
 }
 
 /* Jumbotron */
