@@ -50,7 +50,7 @@
 					<li><a href="index.html"  class="nav-hover"><span>About Me</span></a></li>
 					<li class="button"><a href="projects.html" class="nav-hover"><span>Projects</span></a></li>
 					<li class="button"><a href="resume.html" class="nav-active nav-hover"><span>Resume</span></a></li>
-					<li class="button"><a href="#contact-me" class="nav-hover"><span>Contact Me</span></a></li>
+					<li class="button"><a href="contactme.html" class="nav-hover"><span>Contact Me</span></a></li>
 				</ul>
 			</div>
 			
@@ -58,20 +58,36 @@
 		</nav>
 		<!--End of navbar -->
 
+		<!-- PDF RESUME -->
+		<div id="pdfModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		   <p id="pdf"><embed src="img/pdf-resume.pdf" width="800px" height="800px"></p>
+
+		  </div>
+		</div>
+
 		<div class="container">
             <div class="my-resume">
             
-                <section class="center title">
-                    <h1>My Resume</h1>
+                <section class="center">
+                    <h1 class="title">My Resume</h1>
                     <button type="button" class="btn btn-info btn-lg" id="pdf-btn" data-toggle="modal" data-target="#pdfModal">View in PDF</button>
                 </section>
 			    <hr>
 
+				<section class="education center">	
+				<h2>B.S. Computer Science from University of California, San Diego</h2>
+				<hr>
+				</section>
+<!--
                 <div class="row">
-                <section class="title">
+                <section>
                     <h1 id="prog-lang">Programming Languages</h1>
                 </section>
                 </div>
+
                 <div class="row center">
                     <div class="col-sm-2">
                         <i class="devicon-cplusplus-line colored"></i>
@@ -94,7 +110,7 @@
                 </div>
 
                 <div class="row">
-                <section class="title">
+                <section>
                     <h1 id="tools">Tools</h1>
                 </section>
                 </div>
@@ -113,16 +129,13 @@
                         <i class="devicon-vim-plain colored"></i>
                     </div>
                     <div class="col-sm-2">
-                        <img class="resize" src="img/visual-studios.png">
+  <!--                      <img class="resize" src="img/visual-studios.png"> 
                     </div>
                 </div>
 
 			    <hr>
 		
-			<section class="education center">	
-				<h2>B.S. Computer Science from the University of California, San Diego</h2>
-				<hr>
-			</section>
+-->			
 
 		
 		
@@ -131,13 +144,46 @@
 		<!--Experience Tables-->
 
 		<section class="experience">
+
 			<div class="row">
-				<div class="title center">
-					<h1>Experiences</h1>
+				<h1>Experiences</h1>
+				<div class="grid-2">
+					<h2><b>Healthware</b></h2>
+					<p>UI Developer</p>
+					<p>March. 2016 - Present</p>
 				</div>
-					<h2><b>Bentley Systems</b></h2>
-					<p>Software Engineering Intern</p>
-					<p>July. 2015 - Sept. 2015</p>
+				<div class="grid-4">
+					<ul>
+						<li>Performed research activities, such as discussing research papers and writing logs </li>
+						<li>Participated in Synthesizing Electronic Gadgets Research with Professor Steven Swanson </li>
+						<li>Analyzed and experimented different ways to automate the process of creating functional gadgets </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="grid-2">
+					<h2><b>Teradata</b></h2>
+					<p>Database Engineering Intern</p>
+					<p>June. 2016 - Sept. 2016</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Responsisble for the installation, upgrade, and migration part of the software.</li>
+						<li>Executed tests, identified the cause of failures,and implemented bug fixes.</li>
+						<li>Created shell scripts to perform checks that ensure the test systems are set up correctly</li>
+						<li>Implemented new features to the automated testing system to enhance the usability.</li>
+						<li>Participated in a hackathon and created a discussion forum using Angular2, TypeScript, and an open source API called Teradata Covalent.</li>
+					</ul>
+				</div>
+			</div>
+			
+
+			<div class="row">
+				
+				<h2><b>Bentley Systems</b></h2>
+				<p>Software Engineering Intern</p>
+				<p>July. 2015 - Sept. 2015</p>
 				
 				<div class="grid-4">
 					<ul>
@@ -158,8 +204,7 @@
 				<div class="grid-4">
 					<ul>
 						<li>Performed research activities, such as discussing research papers and writing logs </li>
-						<li>Participated in Synthesizing Electronic Gadgets Research with Professor Steven Swanson </li>
-						<li>Analyzed and experimented different ways to automate the process of creating functional gadgets </li>
+						<li>Participated in Synthesizing Electronic Gadgets Research with Professor Steven Swanson to analyze and experiment different ways to automate the process of creating functional gadgets </li>
 						<li>Utilized Arduino to build a device that changed colors based on the temperature differences</li>
 						<li>Facilitated weekly meetings to discuss project ideas and managed the team </li>
 					</ul>
@@ -173,8 +218,7 @@
 				</div>
 				<div class="grid-4">
 					<ul>
-						<li>Assisted incoming freshman on their computer science projects</li>
-						<li>Provided constructive feedback for weekly programming assignments </li>
+						<li>Assisted incoming freshman on their computer science projects and provided constructive feedback for weekly programming assignments </li>
 						<li>Conducted open lab hours and hosted review sessions for students to prepare for their exams</li>
 					</ul>
 				</div>
@@ -188,15 +232,57 @@
 				<div class="title">
 					<h1>Thank you for visiting my portfolio!</h1>
 				</div>
-				<p>If you are looking for a designer and you like my work, please feel free to contact me.</p>	
 				<button type="button" id="message-me-btn" class="btn" data-toggle="modal" data-target="#contactMeModal">
-					<span class="glyphicon glyphicon-envelope"></span>Message Me
+					<span class="glyphicon glyphicon-envelope"></span>  Message Me
 				</button>
 			</div>
 		</section>
 	
 		</div>
         </div>
+
+		<!-- Contact Me Modal-->
+		<div id="contactMeModal" class="modal fade" role="dialog">
+  			<div class="modal-dialog">
+    		<!-- Modal content-->
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+        			<h1 class="modal-title">Contact Me</h1>
+      			</div>
+      			<div class="modal-body">
+        			
+					<div class="container">
+
+						<div class="row">
+							<div class="col-md-3">
+								<p><span class="glyphicon glyphicon-envelope"></span> Email Address</p>
+								<h4><b>eunicewong@live.com</b></h4>
+								<br>
+								<p><span class="glyphicon glyphicon-earphone"></span >Call</p>
+								<h4><b>+1 (650) 575-2768 </b></h4>
+								<br>
+								<p>LinkedIn</p>
+								<a href="https://www.linkedin.com/in/yueeunicewong"><b>https://www.linkedin.com/in/yueeunicewong</b></a>
+								<br>
+								<p>GitHub</p>
+								<a href="https://github.com/eunicorn"><b>https://github.com/eunicorn</b></a>
+							</div>
+
+							<div class="col-md-5">
+								<img src="img/owl.jpeg" style="height:300px;">
+							</div>
+						</div>
+
+					</div>
+
+      			</div>
+      			<div class="modal-footer">
+        			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      			</div>
+    		</div>
+  			</div>
+		</div>
 	
 
 
