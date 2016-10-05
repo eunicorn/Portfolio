@@ -334,6 +334,11 @@ i{
   float: right;
 }
 
+.view-design {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /*
 .resize{
   width: 80px;
